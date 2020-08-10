@@ -1,9 +1,14 @@
 html{
   font-size: $baseFontSize;
 
+  @include landscape{
+    font-size: $baseFontSize;
+  }
+
   @include tablet{
     font-size: $baseFontSize - 1px;
   }
+  
   @include phone{
     font-size: $baseFontSize - 2px;
   }

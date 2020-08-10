@@ -1,43 +1,49 @@
 .review{
-    position: relative;
-    color: #ffffff;
 
-
-  &__link{
-    max-width: 275px;
-    max-height: 325px;
+  &__block{
+    height: 0;
     overflow: hidden;
-    
-    @include tablet {
+    padding-top: 325px / 275px * 100%;
+    background: transparent;
+    position: relative;
 
+    @include landscape{
+      padding-top: 392px / 275px * 100%;
+    }
+
+    @include tablet{
+      padding-top: 256px / 384px * 100%;
+    }
+    
+    @include phone{
+      padding-top: 240px / 200px * 100%;
     }
   }
-  &__img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
-
-  }
-  &__content-wrap{
-    display: none;
-    background-color: rgba(20, 20, 20, .7);
+  &__wrap{
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    // padding: 0 rem(20px);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
   }
 
   &__content{
-    min-width: 86%;
+    display: none;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 5%;
+    right: 5%;
+    bottom: 8%;
+    color: #ffffff;
   }
 
   &__author{
@@ -46,11 +52,16 @@
     color: #ffffff;
     margin-bottom: rem(20px);
   }
-
+    
   &__text{
     font-size: rem(14px);
     font-weight: 300;
     line-height: 1.6;
     margin-bottom: rem(15px);
+
+    @include phone{
+      display: none;
+    }
   }
 }
+

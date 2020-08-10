@@ -1,23 +1,43 @@
+
 .reviews{
-  margin-left: rem(-25px);
-  margin-right: rem(-25px);
-  
+
   &__list{
-    column-count: 4;
-    column-gap: 0;
+   column-count: 4;
+   column-gap: 0;
+
+    @include landscape{
+      column-count: 3;
+    }
 
     @include tablet{
       column-count: 2;
     }
+
   }
   &__item{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    break-inside: avoid;
+
+    @include landscape{
+      &:nth-last-child(-n+2) { /* последние 2 потомка */
+        display: none;
+      }
+    }
+
+    @include tablet{
+      &:nth-last-child(-n+2) { /* последние 2 потомка */
+        display: block;
+      }
+    }
+
     &:hover{
-      .review__content-wrap{
+      .review__content{
         display: block;
       }
     }
     &_active {
-      .review__content-wrap{
+      .review__content{
         display: block;
       }
     }
