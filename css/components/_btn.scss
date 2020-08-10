@@ -1,0 +1,35 @@
+.btn{
+  color: #ffffff;
+  font-size: rem(13px);
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: rem(11px) rem(14px) rem(11px);
+  border-radius: 4px;
+  line-height: 1;
+  border: none;
+  outline: none;
+
+  &_primary{
+    background: $primary;
+
+    &:hover{
+      background: darken($color: $primary, $amount: 5%);
+    }
+  }
+
+  &_default{
+    background: #2f3234;
+    &:hover{
+      background: darken($color: #2f3234, $amount: 5%);
+    }
+  }
+
+  &_transparent{
+    text-transform: none;
+    font-size: rem(15px);
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+
+}

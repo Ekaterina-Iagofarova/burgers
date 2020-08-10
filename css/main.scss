@@ -1,0 +1,38 @@
+//layout
+@import "https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.css";
+@import "./layout/var";
+@import "./layout/mixins";
+@import "./layout/base";
+@import "./layout/fonts";
+
+//components
+@import "./components/btn";
+@import "./components/head-section";
+
+@import "./components/header";
+@import "./components/logo";
+@import "./components/menu";
+@import "./components/contact";
+@import "./components/burger-menu";
+@import "./components/hero";
+@import "./components/best-section";
+@import "./components/best";
+@import "./components/advantage";
+@import "./components/section";
+// @import "./components/benefit";
+// @import "./components/section";
+// @import "./components/heading";
+// @import "./components/advantages";
+
+// @import "./components/advantages-section";
+@import "./components/review";
+@import "./components/reviews";
+@import "./components/reviews-section";
+@import "./components/order";
+// @import "./components/delivery-section";
+@import "./components/form";
+@import "./components/radio";
+@import "./components/fixed-menu";
+@import "./components/map-section";
+@import "./components/footer";
+@import "./components/social";

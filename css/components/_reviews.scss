@@ -1,0 +1,25 @@
+.reviews{
+  margin-left: rem(-25px);
+  margin-right: rem(-25px);
+  
+  &__list{
+    column-count: 4;
+    column-gap: 0;
+
+    @include tablet{
+      column-count: 2;
+    }
+  }
+  &__item{
+    &:hover{
+      .review__content-wrap{
+        display: block;
+      }
+    }
+    &_active {
+      .review__content-wrap{
+        display: block;
+      }
+    }
+  }
+}

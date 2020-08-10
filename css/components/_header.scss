@@ -1,0 +1,25 @@
+.header{
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__nav{
+    margin-left: rem(44px);
+  }
+
+  &__btn{
+    display: flex;
+    margin-left: auto;
+
+    @include tablet{
+      margin-right: 9%;
+    }
+    @include phone{
+      margin-right: 15%;
+    }
+  }
+
+  &__burger{
+    position: fixed;
+  }
+}

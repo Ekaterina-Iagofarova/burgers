@@ -1,0 +1,49 @@
+.menu{
+  color: #fff;
+  text-transform: uppercase;
+  margin-left: rem(60px);
+
+  &__list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-size: rem(16px);
+  }
+
+  &__item{
+    margin-right: rem(32px);
+    position: relative;
+
+    &:before{
+      position: absolute;
+      content: "\2022";
+      font-size: rem(20px);
+      top: rem(-2px);
+      left: rem(-20px);
+
+    }
+
+    &:first-child{
+
+      &:before{
+        display: none;
+      }
+    }
+
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+
+  &__link{
+    font-size: rem(13px);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  @include tablet{
+    display: none;
+  }
+}

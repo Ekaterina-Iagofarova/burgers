@@ -1,0 +1,54 @@
+.hero{
+
+
+  &__content{
+    display: block;
+    margin-left: 50%;
+    margin-bottom: 30%;
+    line-height: 1.2;
+
+    @include tablet{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-left: 0;
+      margin-bottom: 15%;
+    }
+  }
+
+
+
+  // &__img-wrapper{
+  //   max-width: 417px;
+  //   max-height: 424px;
+  //   overflow: hidden;
+  // }
+  // &__image{
+  //   width: 100%;
+  //   height: 100%;
+  //   object-fit: cover;
+  // }
+  // &__content{
+  //   padding-top: 66px;
+  //   margin-left: rem(10px);
+
+  //   @include tablet{
+  //     padding-top: 0;
+  //     margin-left: 0;
+  //     text-align: center;
+  //   }
+  // }
+  &__title{
+    color: $secondary;
+    font-family: 'gagalin', sans-serif;
+    font-size: rem(75px);
+    margin-bottom: rem(8px);
+  }
+  &__description{
+    color: #fff;
+    font-family: 'lifehack', sans-serif;
+    font-size: rem(65px);
+    line-height: 1;
+  }
+}

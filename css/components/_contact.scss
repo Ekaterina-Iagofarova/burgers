@@ -1,0 +1,36 @@
+.contact{
+  font-size: rem(14px);
+
+  &__phone{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: $primary;
+
+    &:hover{
+      text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    }
+  }
+
+  &__icon{
+    width: 13px;
+    height: 12px;
+    margin-right: 6px;
+    fill: $primary;
+  }
+
+  &__phone-number{
+    white-space: nowrap;
+  }
+
+  &__address{
+    color: #ffffff;
+    margin-bottom: rem(4px);
+    
+    @include phone{
+      font-size: rem(20px);
+      margin-bottom: rem(16px);    
+    }
+  }
+}

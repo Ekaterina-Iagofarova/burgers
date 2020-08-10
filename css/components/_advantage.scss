@@ -1,0 +1,57 @@
+.advantage{
+  text-align: center;
+
+  @include phone{
+    display: flex;
+    text-align: left;
+  }
+
+
+  &__wrapper{
+    margin-bottom: rem(25px);
+
+    @include phone{
+      margin-bottom: 0;
+      margin-right: rem(20px);
+    }
+  }
+
+  &__icon{
+    width: 100px;
+    height: 90px;
+
+    &_red{
+      fill: $primary;
+    }
+    &_yellow{
+      fill: $secondary;
+    }
+    &_green{
+      fill: $third;
+    }
+  }
+
+
+  &__content{
+    font-size: rem(18px);
+  }
+
+  &__title{
+    color: #2f3234;
+    font-family: 'lifehack', sans-serif;
+    font-size: rem(24px);
+    line-height: 1.1;
+    margin-bottom: rem(20px);
+
+    @include tablet{
+
+      margin-bottom: rem(6px);
+    }
+  }
+
+  &__description{
+    color: #2f3234;
+    line-height: 1.6;
+    font-size: rem(14px);
+  }
+}
