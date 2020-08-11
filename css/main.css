@@ -368,35 +368,18 @@ table {
         font-size: 2.5rem;
         margin-bottom: 2.5rem; } }
 
-.review__block {
-  height: 0;
-  overflow: hidden;
-  padding-top: 118.1818181818%;
-  background: transparent;
-  position: relative; }
-  @media screen and (max-width: 992px) {
-    .review__block {
-      padding-top: 142.5454545455%; } }
-  @media screen and (max-width: 768px) {
-    .review__block {
-      padding-top: 66.6666666667%; } }
-  @media screen and (max-width: 480px) {
-    .review__block {
-      padding-top: 120%; } }
 .review__wrap {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100%; }
-.review__img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  -webkit-filter: grayscale(100%);
-  /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%); }
+  height: 50vh;
+  object-fit: cover; }
+  @media screen and (max-width: 768px) {
+    .review__wrap {
+      height: 25vh; } }
+  .review__wrap_img {
+    object-position: top center;
+    -webkit-filter: grayscale(100%);
+    /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%); }
 .review__content {
   display: none;
   position: absolute;
@@ -430,7 +413,8 @@ table {
 .reviews__item {
   -webkit-column-break-inside: avoid;
   page-break-inside: avoid;
-  break-inside: avoid; }
+  break-inside: avoid;
+  position: relative; }
   @media screen and (max-width: 992px) {
     .reviews__item:nth-last-child(-n+2) {
       /* последние 2 потомка */
