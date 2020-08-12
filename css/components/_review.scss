@@ -27,6 +27,16 @@
     right: 5%;
     bottom: 8%;
     color: #ffffff;
+
+    @include tablet{
+      top: 10%;
+      width: 94%;
+    }
+    @include tablet{
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
   }
 
   &__author{
@@ -34,6 +44,11 @@
     font-family: 'gagalin', sans-serif;
     color: #ffffff;
     margin-bottom: rem(20px);
+
+    @include tablet{
+      font-size: rem(20px);
+      text-align: center;
+    }
   }
     
   &__text{
@@ -42,9 +57,17 @@
     line-height: 1.6;
     margin-bottom: rem(15px);
 
+    @include tablet{
+      text-align: center;
+    }
+
     @include phone{
       display: none;
     }
+  }
+  &__btn{
+    display: flex;
+    justify-content: center;
   }
 }
 
